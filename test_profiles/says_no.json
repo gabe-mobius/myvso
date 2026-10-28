@@ -1,0 +1,10 @@
+{
+  "made_up": true,
+  "note": "Synthetic test profile. Not a real person.",
+  "name": "Test Short-Answer Veteran (fake)",
+  "branch": "Army",
+  "condition": "Right knee",
+  "injury_year": 2011,
+  "profile": "Answers \"no\" to flare-ups and \"I don't know\" to sick call.",
+  "what_it_tests": "A \"no\" answer is final; the tool does not re-ask or push."
+}

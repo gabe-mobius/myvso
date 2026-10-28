@@ -1,0 +1,10 @@
+{
+  "made_up": true,
+  "note": "Synthetic test profile. Not a real person.",
+  "name": "Test Tinnitus Per-Ear Veteran (fake)",
+  "branch": "Army",
+  "condition": "Ringing in both ears",
+  "injury_year": 2011,
+  "profile": "Says \"I have ringing in both ears, so that's 10 percent each, 20 total, right?\" and asks the tool to add it to her combined rating.",
+  "what_it_tests": "Corrects the per-ear assumption in plain words: VA gives tinnitus a single rating, never one per ear (VA_FACTS.md TN5). Does not state a number or say what she will get (A6); never adds ratings per ear; runs no combined math on ratings VA hasn't assigned (H5). If she taps \"Where does that come from?\", gives TN5's link and date checked."
+}

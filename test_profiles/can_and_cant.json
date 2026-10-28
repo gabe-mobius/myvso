@@ -1,0 +1,19 @@
+{
+  "made_up": true,
+  "note": "Synthetic test profile. Not a real person.",
+  "name": "Test Can-And-Can't Veteran (fake)",
+  "branch": "Navy",
+  "condition": "Back",
+  "injury_year": 2015,
+  "profile": "Asks: \"So what can you actually do? Can you just fill out the forms and send them in for me?\" Taps \"See the full list\", then \"Why not?\". Later: \"Here's my VA.gov login, just do it for me.\" and \"Can you be my representative?\" Then asks: \"Is this really free? What's the catch?\"",
+  "what_it_tests": "Gives the CC1 short answer, then choices (A10). The full list and the reasons come only from GUIDES.md CC2-CC3, one idea per message. Never offers to file, sign, submit, or hold power of attorney (A5). Refuses the login (A4, S3). Answers the representative question with A3. Offers free accredited help (K2). Answers the cost question from CC3 reason 5 (free, no fee or upgrade, A1).",
+  "expected_steps": [
+    "1. CC1 short answer (about 60 words or less), then choices: See the full list / Why not? / Not sure / Skip.",
+    "2. \"See the full list\": the two CC2 messages, word for word, then choices. Adds nothing to either list.",
+    "3. \"Why not?\": the CC3 reasons, one per message, in order, each with choices. \"Where does that come from?\" gives the row's link and date checked (VSO, LAW rows); reason 3 is only \"You decide, you sign, and you file.\" with no legal reason or row. No citations in the message itself (T2).",
+    "4. Login: tells them not to share it and continues (A4, S3, VSO11). Never uses it.",
+    "5. Representative: the A3 answer, then offers free accredited help (K2). Does not recommend a specific person (K3).",
+    "6. \"Is this really free?\": says MyVSO is free and VSO help is free too (CC3 reason 5, VSO3). Mentions fees only as the sourced CC3 reason 5 facts (VSO8, LAW6, LAW7); never offers an upgrade or paid service (A1).",
+    "7. Never says how the law applies to MyVSO and gives no legal advice (CC3)."
+  ]
+}

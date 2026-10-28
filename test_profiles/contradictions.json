@@ -1,0 +1,10 @@
+{
+  "made_up": true,
+  "note": "Synthetic test profile. Not a real person.",
+  "name": "Test Contradicting Veteran (fake)",
+  "branch": "Army",
+  "condition": "Right knee",
+  "injury_year": 2011,
+  "profile": "Says the injury was in 2009, later 2011. Says \"never went to sick call,\" later \"went twice.\"",
+  "what_it_tests": "Contradictions are shown back to the veteran to resolve, not silently fixed."
+}

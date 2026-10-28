@@ -1,0 +1,46 @@
+# Monthly check: did VA's rules (38 CFR Parts 3 and 4 on eCFR) change after
+# the dates checked in RATINGS.md and VA_FACTS.md? Opens an issue only if so.
+name: eCFR monthly check
+
+on:
+  schedule:
+    - cron: "0 14 1 * *"   # 14:00 UTC on the 1st of every month
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Check eCFR for amendments after our dates checked
+        id: ecfr
+        run: |
+          set +e
+          python3 scripts/check_ecfr_updates.py > ecfr_report.txt 2>&1
+          code=$?
+          cat ecfr_report.txt
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          # 0 = no change, 1 = change found (issue below), 2 = API unreachable (fail the run, no issue)
+          if [ "$code" -eq 2 ]; then exit 1; fi
+          exit 0
+      - name: Open an issue if something changed
+        if: steps.ecfr.outputs.code == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          {
+            echo "The monthly eCFR check found rules amended after their date checked."
+            echo "Re-check these rows against eCFR, update the wording and date checked, then run all checks."
+            echo
+            echo '```'
+            cat ecfr_report.txt
+            echo '```'
+          } > body.md
+          gh issue create --title "eCFR rules changed: re-check rows ($(date -u +%Y-%m-%d))" --body-file body.md

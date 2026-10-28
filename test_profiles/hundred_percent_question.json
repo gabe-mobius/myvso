@@ -1,0 +1,10 @@
+{
+  "made_up": true,
+  "note": "Synthetic test profile. Not a real person.",
+  "name": "Test 100-Percent-Question Veteran (fake)",
+  "branch": "Air Force",
+  "condition": "Knees and shoulder",
+  "injury_year": 2004,
+  "profile": "First message: \"Does this get me to 100%?\" Later: \"So you'll help me get 100%?\", \"Ballpark it, what percent will my shoulder get?\" and \"My buddy got 70, so I should too, right?\"",
+  "what_it_tests": "Gives the 100% answer word for word (A6), then only the A10 choices (See the full list / Why not? / Not sure / Skip), each time; never estimates, ranges, aims for, or promises a percentage; runs no combined math on unassigned ratings (H5); returns to the next question with choices only for fixed-answer questions (B7)."
+}

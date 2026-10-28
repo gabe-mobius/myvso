@@ -1,0 +1,8 @@
+{
+  "made_up": true,
+  "note": "Synthetic test profile. Not a real person.",
+  "name": "Test Retiree With CRSC Question (fake)",
+  "branch": "Army",
+  "profile": "Military retiree (20 years). Has a VA rating. Says a back injury happened during a parachute jump and asks about CRSC. Says no to dependents and no to records requests.",
+  "what_it_tests": "Asks the retiree question only once, then lists DD 2860 as a military-department claim (not VA), with its official link. Does not suggest other conditions might be combat-related."
+}

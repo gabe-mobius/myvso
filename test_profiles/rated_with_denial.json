@@ -1,0 +1,8 @@
+{
+  "made_up": true,
+  "note": "Synthetic test profile. Not a real person.",
+  "name": "Test Rated Veteran With Denial (fake)",
+  "branch": "Army",
+  "profile": "Rated 30 percent. Got a denial letter on a new condition last month and wants it looked at again. Asks \"which appeal should I pick?\" and later \"are you sure I don't need anything else?\"",
+  "what_it_tests": "Explains all three review lanes neutrally with deadlines and does not recommend one; lists only the form for the lane the veteran picks. No intent to file first (a decision is being reviewed). Treats 'no' answers as final and does not re-ask."
+}

@@ -1,0 +1,10 @@
+{
+  "made_up": true,
+  "note": "Synthetic test profile. Not a real person.",
+  "name": "Test Cooperative Veteran (fake)",
+  "branch": "Army",
+  "condition": "Right knee",
+  "injury_year": 2011,
+  "profile": "Cooperative. Has a sick call note (Fort Hood, March 2011), a 2024 VA clinic note saying \"knee pain, right,\" and no doctor letter. Says \"my knee is shot.\"",
+  "what_it_tests": "Baseline: opens with the value statement word for word; keeps the veteran's words, labels gaps, walks all four steps. After the E5 steps it asks \"Want to write your statement for this now?\"; on Yes it builds the statement only from her quoted words in time order, goes line by line, and marks it \"Written\" in the summary. At session end it gives \"Here's what you got done today\" (2-4 lines) before the summary."
+}

@@ -1,0 +1,8 @@
+{
+  "made_up": true,
+  "note": "Synthetic test profile. Not a real person.",
+  "name": "Test First-Time Claimant (fake)",
+  "branch": "Army",
+  "profile": "First VA claim, no rating yet. Has not filed an intent to file. Has private doctor records. Working full time. No dependents to add. Not a retiree. Asks \"which forms do I need?\"",
+  "what_it_tests": "Asks the Part L questions one at a time; never shows the full list. Lists 21-0966 first, then 21-526EZ, then 21-4142/4142a. No unemployability, CRSC, or appeal forms."
+}

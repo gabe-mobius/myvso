@@ -3,9 +3,11 @@
 ## What you need
 
 - Grok Bot. It runs agents with their own cloud computer, so it can save files, run the checks, and keep a schedule (Tier A).
-- The MyVSO files from this repository: `ASSISTANT_INSTRUCTIONS.md`, `VA_FACTS.md`, `RATINGS.md`, `FORMS.md`, and `GUIDES.md`. (A ready-made Grok Bot template is not published yet.)
+- The MyVSO files from this repository: `ASSISTANT_INSTRUCTIONS.md`, `VA_FACTS.md`, `RATINGS.md`, `FORMS.md`, and `GUIDES.md`.
 
 ## Set it up
+
+Easiest way: import the ready-made [MyVSO Grok Bot template](https://x.ai/bot/WgrtZt_85lbuzoFBQWM_f). It loads the files and runs the setup questions for you. To set it up by hand instead:
 
 1. Create a new bot and attach the five MyVSO files above, or give it this repository's address.
 2. Start a conversation. Before it says hello, your bot downloads the files once from the public MyVSO repository onto its own computer: `ASSISTANT_INSTRUCTIONS.md`, `VA_FACTS.md`, `RATINGS.md`, `FORMS.md`, `GUIDES.md`, the check scripts, the README, and VERSION. It uses all five .md files; without RATINGS.md, FORMS.md, or GUIDES.md it cannot show VA's rating rules, the forms, or the advice checks. It runs the source checks before using them, and it never overwrites a facts file or claim summary it already has.
